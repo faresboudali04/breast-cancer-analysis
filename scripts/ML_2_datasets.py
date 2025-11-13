@@ -1,5 +1,9 @@
+# Import all required libraries
 import pandas as pd
-import os
+import numpy as np
+from sklearn import datasets
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # Get the directory of the script
 script_dir = os.path.dirname(__file__)
@@ -11,3 +15,9 @@ df_1 = pd.read_csv(csv_path)
 
 # Display the first few rows
 print(df_1.head())
+
+df_1.info()
+
+df_1.describe()
+
+df_1.shape
